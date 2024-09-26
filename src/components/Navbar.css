@@ -1,0 +1,142 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #E7CCCC; /* Soft red background */
+  padding: 15px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.full-width-navbar {
+  width: 100%;
+}
+
+/* Navbar Brand (App Name) Styling */
+.navbar-brand {
+  color: #333333; /* Dark color for the brand name */
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #A5B68D; /* Sage green hover effect for the brand */
+}
+
+/* Navbar Links Styled as Buttons */
+.nav-item .nav-link-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+  display: block; /* Ensure full width on mobile */
+}
+
+.nav-item .home-btn {
+  background-color: #A5B68D; /* Sage green for Home */
+}
+
+.nav-item .dashboard-btn {
+  background-color: #A5B68D; /* Sage green for Dashboard */
+}
+
+.nav-item .add-employee-btn {
+  background-color: #C1CFA1; /* Light green for Add Employee */
+}
+
+/* Username Styling */
+.username-text {
+  color: #333333; /* Darker text for username */
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-bottom: 10px; /* Add spacing below the username on mobile */
+}
+
+/* Logout Button Styling */
+.btn-logout {
+  background-color: #EDE8DC; /* Light beige for Logout */
+  color: #333333; /* Dark text on light background */
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%; /* Full width on mobile */
+  text-align: center;
+  margin-bottom: 10px; /* Add spacing below the logout button */
+}
+
+.btn-logout:hover {
+  background-color: #A5B68D; /* Sage green hover for Logout */
+  color: #ffffff;
+}
+
+/* Responsive Navbar for Mobile */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block; /* Show hamburger menu on mobile */
+  }
+
+  .navbar-collapse.show {
+    display: block !important; /* Ensure the collapse shows on mobile */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0; /* Add spacing between navbar items */
+    width: 100%; /* Make items take full width on mobile */
+  }
+
+  .nav-item .nav-link-btn, .btn-logout {
+    width: 100%; /* Full width on mobile */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .username-text {
+    margin-bottom: 10px;
+  }
+
+  /* Ensure smooth transition of the toggler icon */
+  .navbar-toggler {
+    border-color: transparent;
+    background-color: #333;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Improve mobile responsiveness for smaller screens */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.4rem;
+    }
+
+    .navbar-nav .nav-item {
+      width: 100%; /* Full width items on smaller screens */
+    }
+
+    .nav-item .nav-link-btn, .btn-logout {
+      padding: 12px; /* Increase padding for mobile buttons */
+    }
+
+    .username-text {
+      font-size: 0.9rem;
+    }
+  }
+}

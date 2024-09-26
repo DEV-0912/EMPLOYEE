@@ -1,0 +1,185 @@
+/* Dashboard main container */
+.dashboard-container {
+  width: 100%; 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 20px;
+  background-color: #EDE8DC; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* Heading container */
+.heading-container {
+  padding: 20px;
+  background-color: #C1CFA1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Search container */
+.search-container {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Search input styling */
+.search-input {
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Search input hover/focus effects */
+.search-input:hover,
+.search-input:focus {
+  border-color: #A5B68D;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Table wrapper container */
+.table-wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+}
+
+/* Table container for overflow */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #A5B68D;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  padding: 12px;
+}
+
+.table tbody td {
+  padding: 15px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+/* Table rows alternating background */
+.table tbody tr:nth-child(even) {
+  background-color: #E7CCCC;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+/* Image styling */
+img {
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .table-wrapper {
+    padding: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 15px;
+  }
+
+  .table thead {
+    display: none; /* Hide table headers on mobile */
+  }
+
+  .table tbody td {
+    display: block;
+    text-align: left;
+    padding: 15px 10px; /* Increased padding for better readability */
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-left: none; 
+    border-right: none;
+    padding-left: 45%; /* Adjusted padding for mobile view */
+  }
+
+  /* Label for mobile */
+  .table tbody td::before {
+    content: attr(data-label); /* Use data-label to create pseudo-headers */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40%;
+    font-weight: bold;
+    text-align: left;
+    color: #555;
+  }
+
+  /* Increased gap between rows */
+  .table tbody tr {
+    margin-bottom: 30px; /* Increased margin for more spacing between rows */
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
+  }
+
+  /* Adjust image size */
+  .table tbody td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .table tbody td::before {
+    width: 45%; /* Adjust width for smaller screens */
+  }
+
+  .table tbody td img {
+    width: 40px; 
+    height: 40px;
+  }
+}

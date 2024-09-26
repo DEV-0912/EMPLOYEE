@@ -1,0 +1,59 @@
+/* Container for login page */
+.custom-bg {
+  background-image: url('./login.avif'); /* Background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card styling */
+.custom-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better contrast */
+}
+
+/* Heading styling */
+.custom-card h2 {
+  color: #007bff; /* Primary color for heading */
+  font-weight: bold;
+}
+
+/* Form label styling */
+.form-label {
+  color: #343a40; /* Dark text color */
+  font-weight: bold;
+}
+
+/* Form control styling */
+.form-control {
+  border-radius: 10px; /* Rounded corners for input fields */
+  border: 1px solid #ced4da; /* Light grey border */
+  padding: 10px; /* Padding inside input fields */
+  font-size: 1rem; /* Font size for input text */
+}
+
+/* Submit button styling */
+.btn-primary {
+  background-color: #A5B68D; /* Custom button color */
+  border-color: #A5B68D; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.btn-primary:hover {
+  background-color: #8A9A5B; /* Darker shade on hover */
+  border-color: #8A9A5B; /* Border color on hover */
+}
+
+/* Error message styling */
+.text-danger {
+  color: #dc3545; /* Red color for error messages */
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 20px; /* Add padding for small screens */
+  }
+}

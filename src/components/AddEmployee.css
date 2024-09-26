@@ -1,0 +1,54 @@
+.car {
+  background-color:#A5B68D; /* Use the correct background color */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100vw; /* Full viewport width */
+  min-height: 100vh; /* Make sure it covers the full height of the viewport */
+  margin: 0; /* Remove margins to fit the screen */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+.custom-card {
+  background-color: #E3E6D8; /* Light green background */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  margin-top: 5px;
+}
+
+button {
+  background-color: #A5B68D;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+}

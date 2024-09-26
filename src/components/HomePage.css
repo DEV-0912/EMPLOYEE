@@ -1,0 +1,72 @@
+/* General layout for Home component */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+  /* Hero section styling */
+  .hero-section {
+    background: linear-gradient(to right, #FFF4B5, #FFD7C4); /* Gradient background */
+    color: #343a40; /* Dark text color for contrast */
+    padding: 5rem 1rem; /* Add padding for spacing */
+    text-align: center;
+  }
+  
+  /* Headline styling */
+  .hero-section .display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Lead paragraph styling */
+  .hero-section .lead {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-weight: 300; /* Light font weight */
+  }
+  
+  /* Additional information */
+  .additional-info {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+  }
+  
+  /* Blockquote styling for quotes */
+  .quotes blockquote {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+    border-left: 4px solid #C4D7FF; /* Blue border */
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  /* Styling for the quote text */
+  .quotes blockquote p {
+    font-style: italic;
+    color: #343a40; /* Dark text color */
+    margin: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 20px 10px;
+    }
+  
+    .hero-section .display-4 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section .lead {
+      font-size: 1rem;
+    }
+  }
+  
