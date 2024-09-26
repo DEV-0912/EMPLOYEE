@@ -1,9 +1,3 @@
-/* Container for login page */
-.custom-bg {
-  background-image: url('./login.avif'); /* Background image */
-  background-size: cover;
-  background-position: center;
-}
 
 /* Card styling */
 .custom-card {
